@@ -7,14 +7,16 @@ let mins=zero(d.getMinutes());
 let sec=zero(d.getSeconds());
 let ampm=document.getElementById("ampm");
 
-document.getElementById("hr").innerHTML=hr;
-document.getElementById("mins").innerHTML=(mins);
-document.getElementById("sec").innerHTML=(sec);
-
 if(hr>=12){
     hr=hr-12;
 ampm.innerHTML="PM"
 }
+
+document.getElementById("hr").innerHTML=hr;
+document.getElementById("mins").innerHTML=(mins);
+document.getElementById("sec").innerHTML=(sec);
+
+
 }
 
 function zero(num){
